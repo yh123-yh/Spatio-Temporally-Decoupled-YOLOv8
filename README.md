@@ -1,9 +1,8 @@
 # Spatio-Temporally Decoupled YOLOv8 Pod Counting Reproduction
 
-This repository is a method-level reproduction of the paper
-`Counting Optimization of a Spatio-Temporally Decoupled YOLOv8 Model in Scenes with Dense Pods`.
+`Counting Optimization of a Spatio-Temporally Decoupled YOLOv8 Model in Scenes with Dense Pods`
 
-The paper does not ship the private self-built dataset or source code, so this project provides:
+this project provides:
 
 - A YOLOv8-like PyTorch detector with P2 small-object features.
 - Spatial structure and temporal association branches.
@@ -75,6 +74,5 @@ python scripts/benchmark.py --weights runs/public/best.pt --imgsz 1280
 
 ## Notes
 
-The exact reported metrics in the paper require the unpublished self-built dataset and the exact
-PlantCrop subset used by the authors. This repository separates paper-reported numbers from local
-reproduction results.
+The exact reported metrics require the unpublished self-built dataset and the exact
+PlantCrop subset used by the authors. 
